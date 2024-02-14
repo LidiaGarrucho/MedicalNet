@@ -217,7 +217,7 @@ class ResNet(nn.Module):
         x = self.layer3(x)
         x = self.layer4(x)
         x = self.conv_seg(x)
-        # x = torch.sigmoid_(x) #####
+        x = torch.sigmoid_(x) #####
         return x
 
 def resnet10(**kwargs):

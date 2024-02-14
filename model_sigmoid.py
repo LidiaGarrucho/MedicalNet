@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-from models import resnet
+from models import resnet_sigmoid as resnet
 
 
 def generate_model(opt):
